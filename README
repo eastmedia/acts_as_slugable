@@ -10,7 +10,7 @@ URL slugs are unique within the specified scope (or all records if no scope is d
 
 
 == Installation
-<tt>./script/plugin install http://code.dunae.ca/acts_as_slugable</tt>
+<tt>./script/plugin install git://github.com/bricolage/acts_as_slugable.git</tt>
 
 
 == Usage examples
@@ -44,5 +44,10 @@ To execute the unit tests run the default rake task (<tt>rake</tt>). To execute 
 == Credits
 
 Created by Alex Dunae (http://dunae.ca/), 2006-07
+
+Modified by Matt Pelletier (http://eastmedia.com) 2007-2008. Reasons for forking include:
+* Uses iconv to clean strings
+* Escapes more use cases
+* Will slugify based on the named method, not column (if you ever override columns you'll appreciate this).
 
 Thanks to Andrew White (http://pixeltrix.co.uk/) for fixing a conflict with <tt>acts_as_list</tt>.
